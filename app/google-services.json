@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "365544406404",
+    "project_id": "instawish-5647a",
+    "storage_bucket": "instawish-5647a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365544406404:android:b0e174f4efd10a7a5b31d1",
+        "android_client_info": {
+          "package_name": "slim.project.instawish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365544406404-r4g9ve0r3bp3f9eiaj2cbijt4srcfpcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYhprHbLa6aNLtUBJTRRlJd08sbMS7oFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365544406404-r4g9ve0r3bp3f9eiaj2cbijt4srcfpcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

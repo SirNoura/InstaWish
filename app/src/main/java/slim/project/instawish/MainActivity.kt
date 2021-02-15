@@ -1,13 +1,12 @@
 package slim.project.instawish
 
+import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.view.LayoutInflater
+import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuth.*
 
@@ -21,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val email = findViewById<TextView>(R.id.textemail)
         val password = findViewById<TextView>(R.id.textpass)
         val login = findViewById<Button>(R.id.btnlogin)
+        val btninfo = findViewById<ImageButton>(R.id.btninfo)
 
         //Efetuo do Login
         login.setOnClickListener { auth = getInstance()
@@ -41,6 +41,12 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             //token de verificação da sessão
+        }
+        btninfo.setOnClickListener{
+            val popup = LayoutInflater.from(this).inflate(R.layout.popupinformativo,null)
+            val mBuilder = AlertDialog.Builder(this)
+                .setView(popup)
+            val mAlertDialog = mBuilder.show()
         }
     }
 }
